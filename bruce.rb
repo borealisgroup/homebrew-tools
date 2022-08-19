@@ -5,20 +5,20 @@
 class Bruce < Formula
   desc ""
   homepage "https://github.com/borealisgroup/homebrew-tools"
-  version "1.1.28"
+  version "1.1.29"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.28/bruce_1.1.28_Darwin_arm64.tar.gz"
-      sha256 "fd8cab9ea4e8acedd6946090ebba2c9c628a245b9beefa83cefad0049ada87ac"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.29/bruce_1.1.29_Darwin_arm64.tar.gz"
+      sha256 "defdaeb7441c6ee596389f77e1bec17c0e26d7c877ddf3a7b6e012fa16394946"
 
       def install
         bin.install "bruce"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.28/bruce_1.1.28_Darwin_x86_64.tar.gz"
-      sha256 "95835ebc134d7e086e29c67a6b69e48ebc2156ac392fc49fd46ff942696361c2"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.29/bruce_1.1.29_Darwin_x86_64.tar.gz"
+      sha256 "087240af2144a9b3f4f3b305c9aa7ba106461070493d0ab178050db6a0624eb5"
 
       def install
         bin.install "bruce"
@@ -28,16 +28,16 @@ class Bruce < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.28/bruce_1.1.28_Linux_arm64.tar.gz"
-      sha256 "54169526ed62a43a76169434a58432084f1107e1d2997092f606de39992e63e7"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.29/bruce_1.1.29_Linux_arm64.tar.gz"
+      sha256 "e99ccbd5b17ecab7f9f84e315f77be10a6f3c2ca245bbf8044666a4c26421ccf"
 
       def install
         bin.install "bruce"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.28/bruce_1.1.28_Linux_x86_64.tar.gz"
-      sha256 "b70e41e5d11aca1cc3c3c7c557751f2a67464fb071fc0ab39047ebf5d0b4017e"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.29/bruce_1.1.29_Linux_x86_64.tar.gz"
+      sha256 "e9c6f94beb28e7ebc2a9ef3c0f4113f1b5d9c420b85f3a23588aff5507cbf15f"
 
       def install
         bin.install "bruce"
