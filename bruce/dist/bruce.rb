@@ -5,20 +5,20 @@
 class Bruce < Formula
   desc ""
   homepage "https://github.com/borealisgroup/homebrew-tools"
-  version "1.1.14"
+  version "1.1.15"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.14/bruce_1.1.14_Darwin_arm64.tar.gz"
-      sha256 "2e60ab63870ef996fe925edee0439a66e86e5e82eca2c2da85b81c5844f8f476"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.15/bruce_1.1.15_Darwin_arm64.tar.gz"
+      sha256 "773c5b834c66f57ed55900cd09ed3f8b20b0fdba897f4f77c629bcd292031b04"
 
       def install
         bin.install "bruce"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.14/bruce_1.1.14_Darwin_x86_64.tar.gz"
-      sha256 "258367171690c08c39f873f475ee852bf2c9402e56213a089b789a87c9e66e61"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.15/bruce_1.1.15_Darwin_x86_64.tar.gz"
+      sha256 "b717f62830a6ab2dc83d4028775002e7b9ff252b5b65b85beb93afdce2c61cfe"
 
       def install
         bin.install "bruce"
@@ -27,17 +27,17 @@ class Bruce < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.14/bruce_1.1.14_Linux_x86_64.tar.gz"
-      sha256 "258dfe6d25ffd2935353247d18b48fee27a7903cef901fbaa05ccd3cbe8b3ec9"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.15/bruce_1.1.15_Linux_arm64.tar.gz"
+      sha256 "1caf7dbfb1a527a4500f5272f6cb2beec33389ac300fab9483a87b14c81a9de3"
 
       def install
         bin.install "bruce"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.14/bruce_1.1.14_Linux_arm64.tar.gz"
-      sha256 "671781e934f2ffae945dc545f17c2f8e2338d7c6de0543e305e9d065b2d308bf"
+    if Hardware::CPU.intel?
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.15/bruce_1.1.15_Linux_x86_64.tar.gz"
+      sha256 "b230584012a0c900b878d3bf002a7a315d0694965cbd0b52850870774e606263"
 
       def install
         bin.install "bruce"
