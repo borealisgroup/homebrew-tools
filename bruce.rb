@@ -5,20 +5,20 @@
 class Bruce < Formula
   desc ""
   homepage "https://github.com/borealisgroup/homebrew-tools"
-  version "1.1.32"
+  version "1.1.33"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.32/bruce_1.1.32_Darwin_arm64.tar.gz"
-      sha256 "9fd1574ef09bbd63514175013076a5522c8b5c66c729cca2800954f6acede482"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.33/bruce_1.1.33_Darwin_arm64.tar.gz"
+      sha256 "0cfd198165aa7f2ee81d2344d07e97d5b90b7c8ff076d5738c0eb6bba724413a"
 
       def install
         bin.install "bruce"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.32/bruce_1.1.32_Darwin_x86_64.tar.gz"
-      sha256 "04d7ca5d2739a9fd40a22cb35e8d3d6fb2cf6a6d4a84c92c75502318298e35eb"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.33/bruce_1.1.33_Darwin_x86_64.tar.gz"
+      sha256 "a1b8e591a58b047038ba42c7e53a53033816377c77f7541b99cceb87858dbba9"
 
       def install
         bin.install "bruce"
@@ -27,17 +27,17 @@ class Bruce < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.32/bruce_1.1.32_Linux_arm64.tar.gz"
-      sha256 "3d54260c7c369e1cd85a92016064f0a78b3baaa067599f947dfee79a4acbcb23"
+    if Hardware::CPU.intel?
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.33/bruce_1.1.33_Linux_x86_64.tar.gz"
+      sha256 "23639d95147d1be7596b5dfb72023eaaa19bf0be34dcad8b44240ca4b9e52efd"
 
       def install
         bin.install "bruce"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.32/bruce_1.1.32_Linux_x86_64.tar.gz"
-      sha256 "e40bfec4ee76561f32b5dc9f162436fb2fdef62e26d3c9db1f678238a63a7c8f"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.33/bruce_1.1.33_Linux_arm64.tar.gz"
+      sha256 "34039920df2ac65d80f4427e3254d5e516340b099d3809e08756e510cc738eec"
 
       def install
         bin.install "bruce"
