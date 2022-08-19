@@ -1,3 +1,3 @@
 ## Changelog
-* f39790f Brew formula update for bruce version v1.1.29
-* a12e3ad Releasing 1.1.29
+* f50f5ab Brew formula update for bruce version v1.1.30
+* 93dc428 Releasing 1.1.30
