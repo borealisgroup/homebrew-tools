@@ -5,20 +5,20 @@
 class Bruce < Formula
   desc ""
   homepage "https://github.com/borealisgroup/homebrew-tools"
-  version "1.1.35"
+  version "0.0.0-514f8c6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.35/bruce_1.1.35_Darwin_arm64.tar.gz"
-      sha256 "248492ef78e529a284c9607a31204a677f2d0b904af3289d775a8a3853b71d5a"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v0.0.0-514f8c6/bruce_0.0.0-514f8c6_Darwin_arm64.tar.gz"
+      sha256 "77b07988e286315891f1136794d55f3e0d349c49075a1b9d584b46062bd6902f"
 
       def install
         bin.install "bruce"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.35/bruce_1.1.35_Darwin_x86_64.tar.gz"
-      sha256 "dfb6ced623dc88b5af166bf06025cf0a18d7c51aeea1dd7ed3f06e3a8a535861"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v0.0.0-514f8c6/bruce_0.0.0-514f8c6_Darwin_x86_64.tar.gz"
+      sha256 "d8271aa206595e576b9223aeef86e4bcd4e3e98d30b02839efbd14993b07c9b3"
 
       def install
         bin.install "bruce"
@@ -28,16 +28,16 @@ class Bruce < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.35/bruce_1.1.35_Linux_arm64.tar.gz"
-      sha256 "fb357d74093884158e8026fd447ce9962cf578c7727cda3e2d120a02178cf243"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v0.0.0-514f8c6/bruce_0.0.0-514f8c6_Linux_arm64.tar.gz"
+      sha256 "a11982885eef1b4195ac592695d6a4bd287426babe983bb4f5cb823dfa5af5dc"
 
       def install
         bin.install "bruce"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v1.1.35/bruce_1.1.35_Linux_x86_64.tar.gz"
-      sha256 "142b819ba213bf74ece3dbefa965edc3d0cc662bc490b2342ad3c2f9ac02365d"
+      url "https://github.com/borealisgroup/homebrew-tools/releases/download/v0.0.0-514f8c6/bruce_0.0.0-514f8c6_Linux_x86_64.tar.gz"
+      sha256 "a8494ed5300353862bb6977249793844ce0ad476461c601b89becaf103abb55c"
 
       def install
         bin.install "bruce"
