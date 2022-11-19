@@ -1,1 +1,1 @@
-{"project_name":"bruce","tag":"v1.1.38","previous_tag":"v0.0.0-6a913e3","version":"1.1.38","commit":"46a374154a468ec03e7fb0a3b8cab50b7d0bf574","date":"2022-11-11T14:02:03.744506+01:00","runtime":{"goos":"darwin","goarch":"arm64"}}
+{"project_name":"bruce","tag":"v1.2.0","previous_tag":"v1.1.38","version":"1.2.0","commit":"65ebbef311a160a5341d7ab5cf78a0022756ef2f","date":"2022-11-19T13:33:35.396335+01:00","runtime":{"goos":"darwin","goarch":"arm64"}}
